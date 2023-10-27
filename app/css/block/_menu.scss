@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    &__item {
+        font-size: 20px;
+        transition: color .3s, background-color .3s;
+    }
+
+    &__item:hover {
+        color: $violet;
+    }
+
+    &__item:focus {
+        background-color: $violet-light;
+        color: $dark;
+        outline: none;
+    }
+
+    &__item:active {
+        color: $violet-dark;
+        background-color: inherit;
+    }
+}

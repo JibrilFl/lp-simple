@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $black-grey;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    border: none;
+    background: inherit;
+}
+
+.logo {
+    margin-right: auto;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    color: $dark;
+}

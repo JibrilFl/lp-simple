@@ -1,0 +1,112 @@
+.header {
+    padding: 28px 0;
+    border-bottom: 1px solid $dash;
+
+    &_container  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__logIn {
+        margin-left: 30px;
+    }
+
+    &__search {
+        margin-left: 60px;
+    }
+
+    &__search_input {
+        padding: 0 10px 0 0;
+        height: 26px;
+        width: 225px;
+        border: none;
+        border-bottom: 1px solid #d1d1e5;
+        background-color: inherit;
+        font-size: 20px;
+        color: $dark;
+        outline: none;
+        &::placeholder {
+            font-size: 20px;
+            color: #d1d1e5;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: all .5s;
+        opacity: 0;
+        width: 0;
+        overflow: hidden;
+
+        &.show {
+            width: 226px;
+            opacity: 1;
+        }
+    }
+
+    &__search_exit {
+        position: absolute;
+        background-color: #d1d1e5;
+        height: 16px;
+        width: 16px;
+        border-radius: 100%;
+        right: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__search_exit::after,
+    &__search_exit::before {
+        position: absolute;
+        content: '';
+        background-color: black;
+        height: 8px;
+        width: 1px;
+    }
+
+    &__search_exit::after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &__search_exit::before {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &__logIn,
+    &__search {
+        cursor: pointer;
+    }
+
+    &__logIn_img path,
+    &__search_img path {
+        transition: stroke .3s;
+    }
+
+    &__logIn_img:hover path,
+    &__search_img:hover path{
+        stroke: $violet;
+    }
+
+    &__logIn:focus path,
+    &__search:focus path{
+        stroke: $violet;
+    }
+
+    &__logIn:focus,
+    &__search:focus {
+        background-color: #dad9fb;
+        outline: none;
+    }
+}

@@ -1,0 +1,29 @@
+.catalog {
+    padding: 130px 0;
+    min-height: 620px;
+    overflow: hidden;
+
+    &__wrapper {
+        width: 445px;
+    }
+
+    &_container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__title {
+        color: $dark;
+        font-size: 60px;
+        margin-bottom: 30px;
+        line-height: 1;
+    }
+
+    &__descr {
+        color: $grey;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+}

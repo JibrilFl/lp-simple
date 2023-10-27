@@ -1,0 +1,212 @@
+@media (max-width: 1080px) {
+    .header .logo {
+        padding-left: 39px;
+        padding-bottom: 11px;
+    }
+
+    .header__wrapper {
+        padding-right: 39px;
+        padding-bottom: 11px;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .menu {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid #ddd;
+        padding-top: 18px;
+    }
+
+    .catalog {
+        min-height: 0;
+        padding: 65px 0 0;
+    }
+
+    .paper__steps {
+        justify-content: center;
+    }
+
+    .paper__step:not(:last-child) {
+        margin-right: 80px;
+    }
+
+    .paper__step {
+        width: 210px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .paper__wrapper {
+        align-items: flex-start;
+    }
+
+    .paper__extended {
+        max-width: 330px;
+    }
+
+    .sketch {
+        padding: 60px 0;
+    }
+
+    .sketch__img {
+        max-width: 500px;
+    }
+
+    .container {
+        padding: 0 39px;
+    }
+
+    .header_container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .sketch_container {
+        padding: 0 0 0 39px;
+    }
+}
+
+@media (max-width: 949px) {
+
+    .product__item:nth-child(n + 1) {
+        margin-right: 40px;
+    }
+
+    .header .logo {
+        padding-left: 33px;
+    }
+
+    .header__wrapper {
+        padding-right: 33px;
+    }
+
+    .paper__wrapper {
+        flex-direction: column;
+    }
+
+    .paper__steps {
+        justify-content: space-between;
+    }
+
+    .paper__step {
+        width: 150px;
+    }
+
+    .paper__step_img {
+        margin-right: 0;
+    }
+
+    .paper__extended {
+        margin-bottom: 20px;
+    }
+
+    .catalog__wrapper {
+        margin-bottom: 60px;
+    }
+
+    .container {
+        padding: 0 33px;
+    }
+
+    .sketch_container {
+        flex-direction: column;
+    }
+
+    .header_container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .paper__step_title,
+    .paper__step_descr {
+        font-size: 16px;
+    }
+
+    .sketch__img {
+        order: -1;
+    }
+
+    .catalog__title {
+        font-size: 50px;
+    }
+
+    .paper__info_title,
+    .sketch__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .product__item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .header .logo {
+        padding-left: 32px;
+    }
+
+    .header__wrapper {
+        padding-right: 32px;
+    }
+
+    .container {
+        padding: 0 32px;
+    }
+
+    .header_container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .paper__step_title,
+    .paper__step_descr {
+        font-size: 16px;
+    }
+
+    .catalog__title {
+        font-size: 38px;
+    }
+
+    .catalog__descr,
+    .paper__info_descr,
+    .product__descr {
+        font-size: 16px;
+    }
+
+    .paper__info_title,
+    .sketch__title,
+    .product__title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 680px) {
+    .paper__steps {
+        flex-direction: column;
+    }
+
+    .paper__step {
+        width: 100%;
+        margin-right: 0;
+        padding: 20px 0;
+    }
+
+    .paper__step:not(:last-child) {
+        margin-right: 0;
+        padding: 20px 0;
+    }
+
+    .paper__step_img,
+    .paper__step_inner {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 610px) {
+    //Инпут поиска уменьшить, начать делать бургер меню
+}

@@ -1,0 +1,44 @@
+.footer {
+    padding: 28px 0;
+    background-color: $dark;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__socials_link:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__socials_link {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        transition: background-color .3s;
+
+        & path {
+            transition: fill .3s;
+        }
+
+    }
+
+    &__socials_link:hover {
+        & path {
+            fill: $violet-light;
+        }
+    }
+
+    &__socials_link:focus {
+        background-color: $violet;
+        outline: none;
+    }
+
+    &__socials_link:active {
+        background-color: inherit;
+        & path {
+            fill: $violet-dark;
+        }
+    }
+}

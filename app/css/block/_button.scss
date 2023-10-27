@@ -1,0 +1,26 @@
+.button {
+    padding: 20px 90px;
+    border: 1px solid $violet;
+    font-size: 20px;
+    color: $violet;
+
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+
+    &:hover {
+        background-color: $violet;
+        color: $white;
+    }
+
+    &:focus {
+        background-color: $violet-light;
+        color: $violet;
+        outline: 1px solid $violet;
+    }
+
+    &:active {
+        background-color: $violet-dark;
+        color: $white;
+        border: 1px solid $violet-dark;
+    }
+}
